@@ -1,19 +1,24 @@
 import os
+import re
 import pyperclip
 
-[
-    b1
-] = [[
-    (line)
-for line in block.split('\n')] for block in open(os.path.dirname(os.path.abspath(__file__)) + '/input.txt', 'r').read().split('\n\n')]
+# re.split('', line)
+# re.sub('^', '', line)
+# re.sub('$', '', line)
 
-flag = 
+bs = [[
+    l.strip()
+for l in b.split('\n')] for b in re.split('\n{2,}', open(os.path.dirname(os.path.abspath(__file__)) + '/input.txt', 'r').read().strip())]
 
-for i in range(len(b1)):
-    line = b1[i]
-    
-    
-    
+flag = 0
+
+for bi in range(len(bs)):
+    b = bs[bi]
+    for i in range(len(b)):
+        l = b[i]
+        
+        
+        
 
 pyperclip.copy(flag)
 
