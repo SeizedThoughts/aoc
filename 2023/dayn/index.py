@@ -13,6 +13,7 @@ for l in b.split('\n')] for b in re.split('\n{2,}', open(os.path.dirname(os.path
 flag = 0
 
 for bi in range(len(bs)):
+    # if bi == 0:
     b = bs[bi]
     for i in range(len(b)):
         l = b[i]
